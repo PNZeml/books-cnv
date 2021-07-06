@@ -14,18 +14,19 @@
     </metadata>
 
     <manifest>
+		<item id="css" href="Style/style.css" media-type="text/css" />
 
-        <item id="nav" href="Text/_nav.xhtml" properties="nav" media-type="application/xhtml+xml"/>
+        <item id="nav" href="Text/_nav.xhtml" properties="nav" media-type="application/xhtml+xml" />
 
-		<item id="css" href="Style/style.css" media-type="text/css"/>
+        <item id="00_introduction" href="Text/00_introduction.xhtml" media-type="application/xhtml+xml" />
 
-        <item id="00_introduction" href="Text/00_introduction.xhtml" media-type="application/xhtml+xml"/>
-
+        <item id="notes" href="Text/_notes.xhtml" media-type="application/xhtml+xml" />
     </manifest>
 
     <spine>
-        <itemref idref="00_introduction"/>
-        <itemref idref="nav" linear="no"/>
+        <itemref idref="nav" linear="no" />
+        <itemref idref="00_introduction" />
+        <itemref idref="notes" />
     </spine>
 
 </package>
