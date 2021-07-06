@@ -31,5 +31,5 @@ jobs:
       - name: Build
         shell: pwsh
         run: |
-          . .\build.ps1 
+          . .\compress.ps1 
           New-Epub .\ostrovityanov-politeconomia\
