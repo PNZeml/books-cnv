@@ -33,3 +33,9 @@ jobs:
         run: |
           . .\compress.ps1 
           New-Epub .\ostrovityanov-politeconomia\
+          
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: ostrovityanov-politeconomia
+          path: ostrovityanov-politeconomia.epub
