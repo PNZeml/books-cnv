@@ -1,4 +1,4 @@
-function Create-Epub {
+function New-Epub {
     param (
         [string]$SourcePath,
         [string]$DestinationPath
@@ -10,5 +10,5 @@ function Create-Epub {
 
     $fileName = Split-Path -Path $SourcePath -LeafBase
 
-    Compress-Archive -Path $SourcePath -DestinationPath "${fileName}.epub"
+    Compress-Archive -Path "${SourcePath}\\*" -DestinationPath "${fileName}.epub" -Force
 }
