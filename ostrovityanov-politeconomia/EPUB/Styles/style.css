@@ -1,0 +1,21 @@
+p { 
+    margin: 8px 0 0;
+}
+
+div.para {
+    text-indent: 24px;
+}
+
+div.note {
+    margin: 10px 0 !important;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 90%;
+    padding: 10px 8px 20px 8px !important;
+    page-break-inside: avoid;
+}
+
+div.note {
+    border: 1px solid #6cafd0;
+    background-color: transparent;
+}
