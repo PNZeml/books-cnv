@@ -11,6 +11,10 @@ div.para {
     text-indent: 2em
 }
 
+div.conc {
+    font-style: italic;
+}
+
 div.subt {
     background-color: #F4F4F4;
     font-size: 1em;
