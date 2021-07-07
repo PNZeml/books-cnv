@@ -15,12 +15,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Minify Content
+        uses: actions/setup-node@v2
+        run: |
+          npm i html-minifier -g
+          . .\book-module.ps1 
+          Minify .\ostrovityanov-politeconomia\
+
       - name: Compress EPUBs
         shell: pwsh
         run: |
-          . .\compress.ps1 
+          . .\book-module.ps1 
           New-Epub .\ostrovityanov-politeconomia\
-          
+         
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
