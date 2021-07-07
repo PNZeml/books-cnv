@@ -35,7 +35,7 @@ function Minify {
             Continue
         }
 
-        $newContent = html-minifier.ps1 $filePath.FullName `
+        $newContent = html-minifier $filePath.FullName `
             --collapse-whitespace `
             --keep-closing-slash `
             --minify-css true
