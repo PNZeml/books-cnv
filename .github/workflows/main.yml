@@ -2,8 +2,8 @@ name: CI
 
 on:
   push:
-    tags: [ '*' ]
     branches: [ master ]
+    tags: '*'
   pull_request:
     branches: [ master ]
 
@@ -41,7 +41,6 @@ jobs:
   upload:
     needs: compress
     runs-on: ubuntu-latest
-    if: contains('refs/heads/master', github.ref)
     
     steps:
       - name: Download artifacts
