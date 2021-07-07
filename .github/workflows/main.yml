@@ -22,13 +22,13 @@ jobs:
       - name: Minify EPUBs
         shell: pwsh
         run: |
-          . .\book-module.ps1 
+          . .\books-module.ps1 
           Minify .\ostrovityanov-politeconomia\
 
       - name: Compress EPUBs
         shell: pwsh
         run: |
-          . .\book-module.ps1 
+          . .\books-module.ps1 
           New-Epub .\ostrovityanov-politeconomia\
          
       - name: Upload artifacts
