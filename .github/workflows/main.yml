@@ -14,9 +14,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
 
-      - name: Minify Content
-        uses: actions/setup-node@v2
+      - name: Minify EPUBs
+        shell: pwsh
         run: |
           npm i html-minifier -g
           . .\book-module.ps1 
