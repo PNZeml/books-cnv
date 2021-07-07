@@ -14,12 +14,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      
       - uses: actions/setup-node@v2
+      - name: Setup NPM
+        run: npm i html-minifier -g
 
       - name: Minify EPUBs
         shell: pwsh
         run: |
-          npm i html-minifier -g
           . .\book-module.ps1 
           Minify .\ostrovityanov-politeconomia\
 
