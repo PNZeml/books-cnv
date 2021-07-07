@@ -15,6 +15,7 @@
 		<item id="cover-image" href="Images/_cover.jpg" properties="cover-image" media-type="image/jpeg"/>
         <item id="nav" href="Text/_nav.xhtml" properties="nav" media-type="application/xhtml+xml" />
         <item id="00_introduction" href="Text/00_introduction.xhtml" media-type="application/xhtml+xml" />
+        <item id="24_chapter" href="Text/25_chapter.xhtml" media-type="application/xhtml+xml" />
         <item id="25_chapter" href="Text/25_chapter.xhtml" media-type="application/xhtml+xml" />
         <item id="notes" href="Text/_notes.xhtml" media-type="application/xhtml+xml" />
     </manifest>
@@ -22,6 +23,7 @@
         <itemref idref="cover" linter="no" />
         <itemref idref="nav" linear="yes" />
         <itemref idref="00_introduction" />
+        <itemref idref="24_chapter" />
         <itemref idref="25_chapter" />
         <itemref idref="notes" />
     </spine>
