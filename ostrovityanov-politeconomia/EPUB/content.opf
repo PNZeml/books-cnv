@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package
     id="package" version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId">
-
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-
         <dc:identifier id="BookId">urn:uuid:9f58d9db-2b7e-4643-a880-671fd653e24e</dc:identifier>
         <dc:language>ru-RU</dc:language>
         <dc:title>Политическая Экономия</dc:title>
         <dc:date>1954</dc:date>
-
         <meta property="dcterms:modified">2021-07-06T08:45:41Z</meta>    
-
     </metadata>
-
     <manifest>
-
-        <item id="nav" href="Text/_nav.xhtml" properties="nav" media-type="application/xhtml+xml"/>
-
-		<item id="css" href="Style/style.css" media-type="text/css"/>
-
-        <item id="00_introduction" href="Text/00_introduction.xhtml" media-type="application/xhtml+xml"/>
-
+        <item id="style-page" href="Styles/style-page.css" media-type="text/css" />
+		<item id="style" href="Styles/style.css" media-type="text/css" />
+        <item id="cover" href="Text/_cover.xhtml" media-type="application/xhtml+xml"/>
+		<item id="cover-image" href="Images/_cover.jpg" properties="cover-image" media-type="image/jpeg"/>
+        <item id="nav" href="Text/_nav.xhtml" properties="nav" media-type="application/xhtml+xml" />
+        <item id="00_introduction" href="Text/00_introduction.xhtml" media-type="application/xhtml+xml" />
+        <item id="25_chapter" href="Text/25_chapter.xhtml" media-type="application/xhtml+xml" />
+        <item id="notes" href="Text/_notes.xhtml" media-type="application/xhtml+xml" />
     </manifest>
-
     <spine>
-        <itemref idref="00_introduction"/>
-        <itemref idref="nav" linear="no"/>
+        <itemref idref="cover" linter="no" />
+        <itemref idref="nav" linear="yes" />
+        <itemref idref="00_introduction" />
+        <itemref idref="25_chapter" />
+        <itemref idref="notes" />
     </spine>
-
-</package>
+</package>`

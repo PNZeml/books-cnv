@@ -1,0 +1,32 @@
+body.page {
+    display: block;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: justify;
+    margin: 0 5pt
+}
+
+div.para {
+    text-indent: 2em
+}
+
+div.subt {
+    background-color: #F4F4F4;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    border: Gray solid 1px;
+    margin: 1em 0
+}
+
+div.note {
+    background-color: #F4F4F4;
+    margin: 0.5em 0 !important;
+    padding: 0.5em 0.25em !important;
+    font-size: 80%;
+    page-break-inside: avoid;
+    border-radius: 0.25em;
+    border: 1px solid #6cafd0;
+}
