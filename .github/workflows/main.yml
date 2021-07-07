@@ -17,7 +17,7 @@ jobs:
       
       - uses: actions/setup-node@v2
       - name: Setup NPM
-        run: npm i html-minifier -g
+        run: sudo npm i html-minifier -g
 
       - name: Minify EPUBs
         shell: pwsh
