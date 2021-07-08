@@ -16,7 +16,6 @@ div.conc {
 }
 
 div.subt {
-    background-color: #F4F4F4;
     font-size: 1em;
     font-style: italic;
     font-weight: bold;
@@ -26,11 +25,18 @@ div.subt {
 }
 
 div.note {
-    background-color: #F4F4F4;
     margin: 0.5em 0 !important;
     padding: 0.5em 0.25em !important;
     font-size: 80%;
     page-break-inside: avoid;
     border-radius: 0.25em;
-    border: 1px solid #6cafd0;
+    border: Gray solid 1px;
+}
+
+img.pics {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
